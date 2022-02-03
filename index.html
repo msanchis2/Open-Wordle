@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <noscript>Por favor, habilita los scrips para poder usar esta web</noscript>
+    <title>Open Wordle</title>
+</head>
+<body>
+    <h1>Open Wordle</h1>
+    <section id="formJuego">
+        <h2>Selecciona tu modo de juego</h2>
+        <form>
+            <label>Dificultad</label>
+            <select id="dificultad">
+                <option value="0">Fácil</option>
+                <option value="1">Intermedio</option>
+                <option value="2">Difícil</option>
+                <option value="3">Experto</option>
+            </select>
+            <br>
+            <label>¿Usar palabra personalizada?</label>
+            Si<input type="radio" name="tipo" id="si">
+            No<input type="radio" name="tipo" id="no" checked>
+            <div id="palabra">
+                <label>Elije la palabra:</label>
+                <input type="text" id="inputP">
+            </div>
+            <br>
+            <input type="submit" value="Jugar" id="enviar">
+        </form>
+    </section>
+    <section id="juego"></section>
+    <input type="button" id="validar" value="Comprobar">
+    <p><a href="comojugar.html">Como jugar</a></p>
+</body>
+</html>
