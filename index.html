@@ -17,10 +17,11 @@
         <form>
             <label>Dificultad</label>
             <select id="dificultad">
-                <option value="0">Fácil</option>
-                <option value="1">Intermedio</option>
-                <option value="2">Difícil</option>
-                <option value="3">Experto</option>
+                <option value="0">Muy Fácil</option>
+                <option value="1">Fácil</option>
+                <option value="2">Intermedio</option>
+                <option value="3">Difícil</option>
+                <option value="4">Experto</option>
             </select>
             <br>
             <label>¿Usar palabra personalizada?</label>
@@ -30,6 +31,10 @@
                 <label>Elije la palabra:</label>
                 <input type="text" id="inputP">
             </div>
+            <div id="numLetras">
+                <label>Elije longitud de la palabra:</label>
+                <input type="number" id="inputN" max="8" min="3" value="5">
+            </div>
             <br>
             <input type="submit" value="Jugar" id="enviar">
         </form>
@@ -37,5 +42,13 @@
     <section id="juego"></section>
     <input type="button" id="validar" value="Comprobar">
     <p><a href="comojugar.html">Como jugar</a></p>
+    <div  id="nocMode" ><img src="noche.png"></div>
+    <!-- "https://www.flaticon.es/iconos-gratis/modo-nocturno" Modo nocturno iconos creados por Freepik -->
 </body>
 </html>
+
+<!--
+    Web desarrollada por Martí Sanchis Román - 14/02/2022
+    martisanchis2000@gmail.com
+    No creo en la idea de "propiedad intelectual", haz con este código lo que te de la gana
+-->
